@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Reserved Characters -->
+    <!-- 
+        - Beberapa karakter sudah dipesan oleh HTML, sehingga kita tidak bisa gunakan pada tulisan teks
+          biasa, contoh karakter < , > , / dikarenakan takutnya bisa dianggap sebagai tag HTML
+        - Oleh karena itu, jika kita memaksakan menuliskan hal tersebut di teks paragraf misal, secara
+          otomatis halaman HTML akan error/rusak/tidak sesuai dengan yang kita mau        
+     -->
+    <h1>Belajar < HTML ></h1>
+    <!-- contoh di atas adalah HTML entity tapi cara yang tidak aman-->
+
+    <!-- Entities -->
+    <!-- 
+        - Karakter yang sudah dipesan di HTML, dinamakan HTML Entity
+        - Ada banyak sekali HTML Entity, dan direkomendasikan untuk menggunakan simbol Entity nya,
+          ketika kita ingin menggunakan karakter tersebut
+        - Tapi sebenarnya tidak wajib, kita tetap bisa menggunakan karakter asli, namun lebih aman jika
+          menggunakan simbol Entity nya
+        - Kita bisa lihat seluruh daftar HTML Entity di:
+        - https://oinam.github.io/entities/
+        - https://www.w3schools.com/html/html_entities.asp
+     -->
+    <p>&lt; atau &gt; ini contoh dari HTML Entities</p>
+    <h1>Belajar &lt; HTML &gt;</h1>
+    <!-- Contoh di atas adalah HTML entity dengan cara yang benar -->
+  </body>
+</html>

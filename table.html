@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Table -->
+    <!-- 
+        - Saat membuat halaman web, kita sering membuat table
+        - Di HTML, kita juga bisa membuat table
+        - Ada banyak sekali tag yang digunakan untuk membuat table
+    -->
+    <!-- Table Tag -->
+    <!-- 
+        - Tag table, digunakan untuk membuat tabel
+        - Tag tr untuk membuat row / baris
+        - Tag th untuk membuat kolom header table. atau table data
+        - Tag td untuk membuat kolom isi table
+        - Tag caption untuk keterangan table
+        - Tag thead, untuk grup header table
+        - Tag tbody, untuk grup isi table
+        - Tag tfoot, untuk grup footer table
+    -->
+    <!-- secara default ketika kita membuat table itu tidak ada bordernya. dengan artian tidak ada apa apa atau tidak ada garis tablenya -->
+    <h1>Belajar Table</h1>
+    <table style="border: 1px solid black">
+      <thead>
+        <tr>
+          <th>Nama Depan</th>
+          <th>Nama Belakang</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Eko Kurniawan</td>
+          <td>Khannedy</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Budi</td>
+          <td>Nugraha</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>Total</td>
+          <td>160</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- Colgroup -->
+    <!-- 
+        - Kadang kita ingin memberi style untuk kolom, jika dilakukan satu-satu, maka akan menyulitkan
+        - Kita bisa menggunakan tag colgroup untuk membuat group kolom, dan tag col untuk tiap kolomnya
+        - Jika kita ingin menambahkan style ke lebih dari satu kolom dengan style yang sama, kita bisa
+          gunakan atribut span=jumlah pada tag col
+    -->
+    <br />
+    <h1>Belajar Table</h1>
+    <table style="border: 1px solid black">
+      <colgroup>
+        <col span="2" style="background-color: yellow" />
+        <col style="background-color: aqua" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Nama Depan</th>
+          <th>Nama Belakang</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Eko</td>
+          <td>Khannedy</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Budi</td>
+          <td>Nugraha</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>Total</td>
+          <td>160</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <!-- Colspan dan Rowspan -->
+    <!-- 
+        - Saat kita membuat table, kita ingin menggabungkan beberapa kolom atau beberapa baris,
+          sehingga terlihat menjadi satu kolom atau satu baris
+        - Pada kasus itu, kita bisa menggunakan atribut colspan untuk menggabungkan beberapa kolom
+          dalam satu baris yang sama
+        - Atau menggunakan atribut rowspan untuk menggabungkan beberapa kolom di baris yang berbeda
+        - Seperti merge cell pada aplikasi microsoft excel
+    -->
+    <table style="border: 1px solid black">
+      <colgroup>
+        <col span="2" style="background-color: yellow" />
+        <col style="background-color: aqua" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="2">Nama</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Eko</td>
+          <td>Khannedy</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Budi</td>
+          <td>Nugraha</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td rowspan="2">Total</td>
+          <td>Total</td>
+          <td>160</td>
+        </tr>
+        <tr>
+          <td>Rata-rata</td>
+          <td>80</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

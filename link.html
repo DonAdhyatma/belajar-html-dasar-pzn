@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Link -->
+    <!-- 
+        - Saat membuat Web, biasanya kita akan membuat banyak sekali halaman HTML
+        - Untuk berpindah dari satu halaman ke halaman lain, kita biasanya jarang melakukannya secara
+          manual dengan cara mengetikkannya di search bar Web Browser
+        - HTML memiliki fitur Link(Tautan), dimana kita bisa meng-klik link tersebut, dan berpindah
+          ke halaman HTML lain
+        - Link tidak harus dalam bentuk Text, Link juga bisa dalam bentuk Gambar misalnya (yang akan kita
+          bahas di materi Image)
+    -->
+    <ul>
+      <li>
+        <a href="https://www.dicoding.com/" title="ini menuju website dicoding" target="_blank">ini target blank</a>
+      </li>
+      <li>
+        <a href="https://www.android.com/" style="background-color: yellow" target="_parent">ini target parent</a>
+      </li>
+      <li>
+        <a href="https://www.dicoding.com/" target="_self">ini target self</a>
+      </li>
+      <li>
+        <a href="https://www.dicoding.com/" target="_top">ini target top</a>
+      </li>
+    </ul>
+    <!-- Tag a -->
+    <!-- 
+      - Untuk membuat Link di HTML, kita bisa menggunakan tag a
+      - Tag a memiliki atribut href, yang berisi lokasi tujuan Link tersebut
+      - Tag a juga memiliki atribut target, yang digunakan sebagai target jendela Web Browser, kita bisa
+        gunakan nilai:
+        target="_self", artinya halaman akan ditampilkan di halaman yang sama, ini adalah bawaan default
+        target="_blank", artinya halaman akan ditampilkan di jendela baru di Browser
+      - Tag a juga memiliki atribut title, untuk menuliskan judul yang keluar ketika mouse berada di atas
+        Link tersebut
+    -->
+    <h1>Belajar Link</h1>
+    <ul>
+      <li><a title="Masuk Facebook" href="https://www.facebook.com/">Ini Link menuju Facebook</a></li>
+      <li><a title="Masuk Youtube" href="https://www.youtube.com/">Ini Link menuju Youtube</a></li>
+      <li><a title="Masuk Dicoding" href="https://www.dicoding.com/">Ini Link menuju Dicoding</a></li>
+    </ul>
+
+    <!-- Absolute URL -->
+    <!-- 
+      - Saat kita menulis halaman tujuan dari href di Link, kita bisa menggunakan absolute URL
+      - Absolute URL merupakan alamat lengkap sebuah tujuan Link
+      - Dalam absolute URL, kita wajib menuliskan seluruh detail protokol, domain dan halaman yang dituju, misal
+      - https://youtube.com/@sandhikagalihWPU/
+      - https://www.instagram.com/fedevalverde/
+      - https://www.dicoding.com/academies/my/
+      - Kelebihan menggunakan Absolute URL adalah, kita bisa membuat Link menuju domain yang berbeda dengan website yang kita buat
+     -->
+    <!-- Relative URL -->
+    <!-- Relatif bisa diartikan mengacu terhadap sesuatu untuk konteks url website maka mengacu terhadap domain atau folder yang ada di domain website tersebut -->
+    <!-- 
+      - Relative URL adalah lokasi href dimana tetap menggunakan domain website saat ini
+      - Relative URL memiliki dua format, bisa diawali dengan /, atau tidak diawali dengan /
+      - Misalnya sekarang kita berada di halaman https://gravitonsoftworks.com/our-products/index.html, 
+        lalu kita memiliki link sebagai berikut:
+        hello.html, artinya akan menuju ke https://gravitonsoftworks.com/our-products/hello.html
+        tetapi kalau dari domain langsung ke /hello.html, artinya akan menuju ke https://gravitonsoftworks.com/hello.html tidak masuk ke our-products lagi 
+        kalau di depannya tidak ada / contoh pzn/hello.html, artinya akan langsung menuju ke folder our products https://gravitonsoftworks.com/our-products/pzn/hello.html dengan domain yang sama yaitu gravitonsoftworks 
+      -->
+    <!-- Mempraktekan membuat Relative URL -->
+    <!-- 
+      1. buat folder belajar-link
+      2. buat folder pzn didalam folder belajar-link
+      3. di dalam folder pzn buat file isinya index.html
+      4. di dalam folder belajar-link buat 2 file html : hello.html dan link.html
+      selanjutnya silahkan liat hasil prakteknya
+     -->
+    <!-- Bookmark -->
+    <!-- 
+      1. Pada kasus halaman web yang sangat panjang, ada bagusnya kita menggunakan Bookmark
+      2. Bookmark adalah link yang bisa digunakan untuk menampilkan HTML element dengan id tertentu
+      3. Bookmark menggunakan # (hash) pada atribut href, misal jika kita menggunakan index.html#eko, artinya ketika membuka halaman index.html, maka web browser otomatis akan menampilkan pada posisi Element HTML dengan id eko
+      4. Jika kita ingin membuat link di halaman HTML itu sendiri, kita bisa langsung buat link dengan href langsung berisi #bookmarkidnya 
+      kita akan coba praktekan ya untuk kasus berada di halaman yang sama
+    -->
+    <h1>Daftar Isi</h1>
+    <ul>
+      <li><a href="#judul1">Judul 1</a></li>
+      <li><a href="#judul2">Judul 2</a></li>
+      <li><a href="#judul3">Judul 3</a></li>
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="judul1">Judul 1</h1>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+
+    <h1 id="judul2">Judul 2</h1>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+
+    <h1 id="judul3">Judul 3</h1>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+
+    <!-- Selanjutnya kita coba Bookmark ke Halaman html yang lain -->
+    <!-- Prakteknya kita akan coba buat file html dengan nama menu.html -->
+  </body>
+</html>

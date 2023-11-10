@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <!-- Glosarium -->
+    <!-- 
+        Mapping : memetakan
+    -->
+    <!-- Responsive -->
+    <!-- 
+        - Kita tahu bahwa ukuran layar komputer itu bisa berbeda-beda, termasuk smartphone
+        - Saat ini, web tidak hanya diakses oleh komputer, bisa juga melalui smartphone, tablet bahkan smart tv
+        - Artinya ukuran layar pasti akan selalu berubah-ubah
+        - Responsive adalah kemampuan beradaptasi terhadap perubahan ukuran layar.
+        - Web sekarang biasanya selalu implementasi responsive, agar tidak perlu membuat banyak web
+          untuk layar yang berbeda
+    -->
+    <!-- Viewport -->
+    <!-- 
+        - Sebelumnya di materi HTML 5, kita melakukan setting viewport dengan initial-scale=1.0
+        - Hal itu dilakukan agar ketika web kita dibuka di mobile (smartphone atau tablet), ukuran web kita
+          mengikuti ukuran layar dari device nya
+        - Ingat, tiap handphone walaupun ukuran layar misal 6 inc, tapi secara pixel bisa berbeda, oleh
+          karena itu ketika kita buat website dengan ukuran 100px misal, di handphone dengan kepadatan
+          pixel yang besar, bisa jadi ukurannya sangat kecil, dan pada handphone dengan kepadatan pixel
+          rendah, bisa jadi sangat besar
+        - Pengaturan viewport bisa mengubah tampilan gambar
+        - tiap handphone kepadatan pixelnya berbeda-beda
+    -->
+    <!-- Responsive Element Size -->
+    <!-- 
+        - Saat kita membuat web, kadang kita menentukan ukuran element, misal picture, table, div, dll
+        - Jika ingin responsenya itu responsive, kita bisa menggunakan % sebagai ukuran / satuan element nya, misal ketika kita
+          gunakan nilai 100%, artinya ukurannya akan 100% dari viewport yang tampil di Web Browser,
+          ketika kita mengubah ukuran Web Browser nya, secara otomatis element akan ikut berubah ukurannya
+    -->
+    <!-- contoh penerapannya -->
+    <h1>Belajar Responsive</h1>
+    <p>Belajar Responsive</p>
+    <img style="width: 100%; height: auto" src="pzn-green.jpg" alt="Programmer Zaman Now" />
+    <!-- Responsive Text Size -->
+    <!-- 
+        - Responsive dengan %, hanya bisa dilakukan di element object seperti gambar, video
+        - Bagaimana pada kasus di teks misalnya? Kadang kita ingin membesarkan teks secara otomatis
+          pada layar besar, dan mengecilkan pada ukuran layar kecil
+        - Pada kasus seperti ini, kita bisa menggunakan unit vw (viewport width) untuk ukuran font
+    -->
+    <br />
+    <h1 style="font-size: 5vw">Belajar Responsive</h1>
+    <p style="font-size: 2vw">Belajar Responsive</p>
+    <img src="" alt="Programmer Zaman Now" />
+    <!-- Jadi kalau untuk gambar responsivenya bisa menggunakan satuan % sedangkan untuk text satuannya bisa menggunakan vw -->
+    <!-- Media Query -->
+    <!-- 
+        - Pada kasus seperti gambar, mungkin ketika layar terlalu besar, dan ukuran gambar kecil, secara
+          otomatis gambar akan pecah, oleh karena itu biasanya pada kasus seperti ini, kita akan
+          menyediakan beberapa jenis ukuran gambar
+        - Dan untuk melakukannya, biasanya kita akan menggunakan CSS Media Query, seperti yang pernah kita praktekan di materi Picture
+    -->
+  </body>
+</html>

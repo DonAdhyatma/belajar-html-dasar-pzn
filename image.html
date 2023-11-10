@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Image -->
+    <!-- 
+        - Image / gambar bisa digunakan untuk memperindah tampilan website yang kita buat
+        - HTML mendukung untuk menampilkan gambar dengan tag img
+        - Hampir semua format gambar yang didukung oleh Web Browser, bisa ditampilkan di halaman web HTML
+    -->
+    <!-- Image Attribute -->
+    <!-- 
+        - Tag img adalah void element, jadi tidak memiliki konten atau tidak memiliki tag penutup
+        - Terdapat beberapa atribut yang bisa kita gunakan dalam tag img
+        - Attribute src yang digunakan untuk menentukan lokasi gambar yang mau ditampilkan, bisa 
+          menggunakan Absolute URL (alamat lengkap sebuah link tujuan) atau Relative URL
+        - Attribute alt yang digunakan sebagai representasi text atau tulisan untuk gambar-
+     -->
+    <h1>Belajar Image</h1>
+    <img src="pzn.jpg" alt="Logo Programmer Zaman Now" title="Logo Programmer Zaman Now Besar" />
+    <!-- ukuran gambar bisa di ubah menggunakan dengan bantuan CSS-->
+    <!-- Image Size -->
+    <!-- 
+        - Secara bawaan default, ukuran gambar akan selalu ditampilkan sesuai aslinya
+        - Kadang-kadang, kita ingin mengubah ukuran gambarnya
+        - Untuk melakukan itu, kita perlu bantuan CSS
+        - Kita bisa gunakan properti css:
+          width untuk mengubah ukuran lebar gambar
+          height untuk mengubah ukuran tinggi gambar
+        - Kita bisa gunakan satuan px (pixel), atau % untuk persentase dari ukuran asli
+        untuk satuan px harus tau ukuran aslinya agar gambar yang diubah ukurannya tidak menjadi gepeng
+    -->
+    <img src="pzn.jpg" alt="pzn" style="width: 150px; height: 150px" title="Logo Programmer Zaman Now Kecil" />
+  </body>
+</html>

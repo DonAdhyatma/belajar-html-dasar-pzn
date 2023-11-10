@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: yellow;
+        display: inline;
+      }
+      .bgred {
+        background-color: red;
+      }
+      #menu {
+        background-color: yellow;
+      }
+      #content {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Block dan Inline -->
+    <!-- 
+        - Di dalam HTML, semua element memiliki nilai display, tergantung dari jenis element yang digunakan
+        - Secara garis besar, ada dua nilai untuk display, block dan inline
+        - Maksud dari display disini adalah karakter element html. dan kita dapat mengubah karakter element html menggunakan properti css display
+          untuk mengubah tampilan element html
+     -->
+    <!-- Block -->
+    <!-- 
+        - Element yang memiliki nilai display block, selalu dimulai dengan baris baru
+        - Web browser secara otomatis menambahkan jarak / margin sebelum dan setelah element
+        - Dan element dengan nilai display block, selalu mengambil ukuran penuh yang tersedia, yang artinya
+          dia akan meregang dari kiri dan kanan halaman web browser
+        - Contoh tag yang menggunakan nilai display block adalah: 
+          h1-h6, p, header, body, ul, li, ol, table, form, dll
+    -->
+    <!-- Inline -->
+    <!-- 
+        - Sedangkan dalam display inline, elemnt tidak dimulai dengan baris baru
+        - Selain itu dalam display inline, element hanya menggunakan ukuran seperlunya saja
+        - Contoh tag yang menggunakan nilai display inline: 
+         span, a,b,i, em, button, input, strong ,dll
+    -->
+    <!-- Div -->
+    <!-- 
+        - Div adalah salah satu tag di HTML yang memiliki nilai display block
+        - Div biasanya digunakan sebagai container (wadah/penampung) untuk beberapa element HTML
+        - Div banyak digunakan ketika kita ingin membedakan bagian - bagian dalam element HTML, misal
+          ada bagian menu, content, footer, header, dll
+        - Biasanya semua itu dibungkus dalam Div
+     -->
+    <div id="menu">
+      <ul>
+        <li>Beranda</li>
+        <li>Artikel</li>
+        <li>Media Sosial</li>
+      </ul>
+    </div>
+    <div id="content">
+      <ul>
+        <h1>Judul Halaman</h1>
+        <p>Isi Halaman</p>
+      </ul>
+    </div>
+    <h1 style="background-color: aqua">Contoh</h1>
+    <!-- Span -->
+    <!-- 
+        - Jika Div menggunakan nilai display block, ada lagi tag span, yang menggunakan nilai display inline
+        - Span biasa digunakan pada kasus kita ingin menggunakan display inline, misal kita mau membuat
+          tulisan Programmer Zaman Now, namun tiap kata berbeda warna
+        - atau semisal kita mau mengubah warna tiap kata dari tulisan Programmer Zaman Now. bisa menggunakan tag span di tiap katanya
+        - Hal itu tidak bisa dilakukan jika menggunakan p, karena p akan mengubah seluruh warna tulisan
+        - Kita bisa gunakan span di tiap kata, agar bisa menambah style di tiap span
+        - span bisa digunakan sebagai container juga seperti div, cuman yang membedakannya adalah karakter element span itu inline
+    -->
+    <h1>
+      <span style="color: red"> Programmer </span>
+      <span style="color: blue"> Zaman </span>
+      <span style="color: orange"> Now </span>
+    </h1>
+  </body>
+</html>

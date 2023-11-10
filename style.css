@@ -1,0 +1,13 @@
+.mobile {
+  background-color: black;
+}
+@media (max-width: 780px) {
+  .mobile {
+    background-color: red;
+  }
+}
+@media (min-width: 320px) and (max-width: 780px) {
+  .mobile {
+    background-color: blue;
+  }
+}
